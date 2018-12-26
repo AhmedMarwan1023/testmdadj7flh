@@ -1,7 +1,7 @@
+const fs = require('fs');
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const antic = JSON.parse(fs.readFileSync('./antic.json', 'utf8'));
-const fs = require('fs');
+const antic = JSON.parse(fs.readFileSync('./antic.json', 'utf8'));  
 var prefix = '!'
 client.on("message", message =>{
 if(!antic[message.author.id]) {
